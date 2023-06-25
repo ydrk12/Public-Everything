@@ -1,0 +1,40 @@
+{
+    "createdBy": "Redirector v3.5.4",
+    "createdAt": "2023-05-03T07:05:02.812Z",
+    "redirects": [
+        {
+            "description": "BingRe2",
+            "exampleUrl": "https://www.bing.com/map",
+            "exampleResult": "https://www.bing.com/map&mkt=en-us",
+            "error": null,
+            "includePattern": "https://www.bing.com/(?!search)(.*)",
+            "excludePattern": "",
+            "patternDesc": "test",
+            "redirectUrl": "https://www.bing.com/$1&mkt=en-us",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "BingRe",
+            "exampleUrl": "https://www.bing.com/search?q=example&lang=en-us",
+            "exampleResult": "https://www.bing.com/search?q=example&lang=en-us&mkt=en-us",
+            "error": null,
+            "includePattern": "^https://www\\.bing\\.com/search(?!.*(\\?|&)mkt=en-us)(.*)$",
+            "excludePattern": "",
+            "patternDesc": "test",
+            "redirectUrl": "https://www.bing.com/search$2&mkt=en-us",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
